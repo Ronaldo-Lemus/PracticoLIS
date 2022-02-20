@@ -8,7 +8,7 @@
             </div>
             <div class="modal-body">
 			<div class="container-fluid">
-			<form method="POST" action="agregar.php">
+			<form method="POST" action="agregar.php" enctype="multipart/form-data">
 				<div class="row form-group">
 					<div class="col-sm-2">
 						<label class="control-label" for="codigo">Codigo:</label>
@@ -38,7 +38,8 @@
 						<label class="control-label" for="nota" >imagenes:</label>
 					</div>
 					<div class="col-sm-10">
-						<input type="text" min="0" max="10" step="0.1" class="form-control" name="imag" id="imag">
+						<input type="hidden" name="acc" value="envio">
+					<input type="file" name="archivo" />
 					</div>
 				</div>
 				<div class="row form-group">
